@@ -609,10 +609,6 @@ function handleClick() {
 ══════════════════════════════════════════ */
 (function init() {
   /* if player already reached the end, show snake forever */
-  if (localStorage.getItem('snake_survey_done') === '1') {
-    $end.style.display = 'flex';
-    return;
-  }
 
   let acInited = false;
   const ensureAudio = () => {
